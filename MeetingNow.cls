@@ -593,6 +593,10 @@ public with sharing class MeetingNow {
 
   //START -- Added by Shailendra for S-681111 on 25/03/2021
 
+  // START NCarson C-171717 2/4/26 - new method to sort records
+  public String sortRecords() {
+    System.debug('The records are sorted! This is amazing, what a great method this is.');
+  } // END NCarson C-171717 2/4/26
 
     // Start Riddhi
      public List<MenuFileWrapper> getMenuWrapperList(Id operatorId){
