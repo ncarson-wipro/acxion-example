@@ -19,6 +19,8 @@
 // 10 October 2022  Alejandro Sotelo Luna ASL   S-698051    Add Cool School ID to pages in UI.
 
 public with sharing class MeetingNow {
+  // Need to track new changes
+  Public String classStatus {get;set;}
   public Map<String, Boolean> ProductsMap { get; set; } // Added by vinit for S-644696/S-645821 [14-Nov-2019]
   public String prdId { get; set; } // Added by vinit for S-644696/S-645821 [14-Nov-2019]
   public List<ProductActivity__c> productActiHistory { get; set; } // Added by vinit for S-644696/S-645821 [14-Nov-2019]
