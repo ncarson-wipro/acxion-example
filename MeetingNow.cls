@@ -1399,11 +1399,19 @@ public with sharing class MeetingNow {
         }
         if (SopListToUpdate.size() > 0) {
           update SopListToUpdate;
-          System.debug('1232 after update');
         }
       }
     }
   }
+
+public String newMethod() {
+    return 'newMethod ran Succesfully';
+}
+
+public String validMethod() {
+    return 'This is a valid method';
+}
+
   //END Added - by Esoof | S-707881 | 02/05/2025
      /*start up action run on page load*/
     public void StartUpAction() {
