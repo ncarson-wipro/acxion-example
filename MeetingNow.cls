@@ -490,7 +490,6 @@ public with sharing class MeetingNow {
             } // END NCarson S-708258 2/3/26
         }
         //End | Added for S-708207
-        System.debug('OperatorId '+OperatorId);
         
         //START -- Added by Himanshu Baghmar | [S-682111] | [19-03-2021] | [For Call Notes History]
         displayCallHistoryNotesButton = false;
@@ -839,7 +838,6 @@ public with sharing class MeetingNow {
   // START || S-708058 || I-437507 || updated by Prashant || 15/07/2025 || Change the return type from PageReference to void || I-437507
   public void getProdActHistory() {
   // END || S-708058 || I-437507 || updated by Prashant || 15/07/2025 || Change the return type from PageReference to void || I-437507
-    System.debug('selected Product id ' + prdId);
     productActiHistory = [
       SELECT
         Id,
@@ -855,7 +853,6 @@ public with sharing class MeetingNow {
       ORDER BY Activity__r.MeetingClosedDate__c DESC
     ]; // Code changes done by Ravi Jain for case 00274126
 
-    System.debug('productActiHistory ' + productActiHistory);
     // START || S-708058 || I-437507 || updated by Prashant || 14/07/2025 || commenting MeetNow page Url
     /*
     PageReference pg2 = null;
